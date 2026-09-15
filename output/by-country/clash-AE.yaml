@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 17e85193-a95c-4430-9b05-d8f303a34ac3
+  uuid: 04dc7739-5b33-49c9-bf16-3c6919a6498f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:

@@ -37,7 +37,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: prep.wwwinternetvideo.click
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
