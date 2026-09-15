@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "3.9.135.156",
-      "server_port": 51847,
-      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+      "server": "56.69.159.191",
+      "server_port": 53271,
+      "uuid": "e8358eb5-7210-4cf8-982f-68af141b7694",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-          "short_id": "0eec442e7b34d2f2"
+          "public_key": "1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc",
+          "short_id": "0a9bd9db19578964"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

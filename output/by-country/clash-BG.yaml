@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   udp: true
   type: vless

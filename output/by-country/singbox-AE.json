@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "04dc7739-5b33-49c9-bf16-3c6919a6498f",
+      "uuid": "77d4bb66-82c8-4511-98e0-44edb2da8978",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -59,13 +59,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
+      "server": "207.148.112.220",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/discuss?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
       ]
     },
     {
@@ -74,7 +98,8 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
