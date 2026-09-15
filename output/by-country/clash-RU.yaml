@@ -5,58 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: www.speedtest.net
-  port: 443
+  server: 162.159.43.187
+  port: 2086
   udp: true
   type: vless
-  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
-  tls: true
-  servername: 7X70yYVT7eQotx-iq9n3rjT1XN1JwKH9.ASDfSafdsAf.workErS.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiM1lhMlFGcm15ZkQ0a1AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    path: /?ed=2560security=tls
     headers:
-      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 131.123.25.4
-  port: 443
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: 4360f941-b541-0028-8507-2de3763e0cfd
-  flow: xtls-rprx-vision
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: fr.convert-flow.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 89.105.206.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4360f941-b541-0318-8507-2de3763e0cfd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: app-ss-97.deep-aispb-analytics.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: a71ad164-3b29-4dbe-aa66-24d095ca7b6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ie82DDS-JoUrtvRfEWWOdcp2cEqs6v0-t2QFw3v7qiE
-    short-id: e3f7fec3cfb3a806
-  servername: assets-ss-97.deep-aispb-analytics.com
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -65,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
