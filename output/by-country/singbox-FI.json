@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
       "server": "fl.windconnect.pro",
       "server_port": 443,
       "uuid": "af00e0c4-decf-48f2-9013-56abe9c9efcd",
@@ -54,7 +34,80 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "server": "5.61.91.207",
+      "server_port": 443,
+      "uuid": "9ec52cb8-8daa-0021-ac36-d38295a25e5b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "short_id": "a7b2c9d4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+      "server": "fi.snobvpn.online",
+      "server_port": 80,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "transport": {
+        "type": "ws",
+        "path": "/snob-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
       "server": "37.143.129.244",
       "server_port": 443,
       "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
@@ -81,7 +134,10 @@
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe"
       ]
     },
     {
@@ -91,7 +147,10 @@
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,18 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 172.67.192.84
+  port: 2095
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /juvsrnmgdu8i0179k5
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: mybb.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: 104.17.147.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  tls: true
+  servername: relay.lunetcloud.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  uuid: 010158f4-1a88-4dfa-8420-c770dc1584e1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -29,8 +70,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -40,6 +81,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  server: uae.irchatgpt.sbs
+  port: 31729
+  udp: true
+  type: vless
+  uuid: 5245cd34-f70c-4770-8bb8-7e143d6a6144
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Va_L4Xfe5283dn2vQkLL8gLhXqO203nueKZVgfFMFh4
+    short-id: 31861a46
+  servername: digikala.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +102,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +114,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 rules:
 - MATCH,PROXIES
