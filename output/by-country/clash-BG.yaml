@@ -5,21 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 213.183.63.60
-  port: 9054
+  server: 192.145.31.5
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 213.183.63.60
-  port: 9098
+  server: 192.145.31.5
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
-  server: 144.31.50.236
+  server: prep.wwwinternetvideo.click
   port: 443
   udp: true
   type: vless

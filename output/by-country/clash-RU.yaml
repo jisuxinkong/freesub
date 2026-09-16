@@ -5,47 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 170.168.99.9
-  port: 8443
+  server: 193.17.92.57
+  port: 2053
   udp: true
   type: vless
-  uuid: 1e4668ca-6526-84ac-2a53-28bbc209da13
+  uuid: 1cbb3702-b434-45cf-8520-3e32d860fd83
   tls: true
   reality-opts:
-    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
-  servername: www.epson.com
+    public-key: G7VlRXdpKKaZ_33pA0Zsii70uiYkeoBiVYgAD_tL_28
+    short-id: 76f9d74c385ae618
+  servername: vk.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
+    grpc-service-name: grpc-fd03cd54
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -12,16 +12,8 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 02 - xiaohe",
-      "server": "168.110.60.104",
-      "server_port": 18112,
-      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 02 - xiaohe",
       "server": "154.31.114.248",
       "server_port": 50159,
       "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
@@ -41,8 +33,57 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
+      "server": "jp-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "f0eb9f67-ef76-40aa-a1e6-22a11d5a9379",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE",
+          "short_id": "28500ae15838f905"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
+      "server": "47.74.3.200",
+      "server_port": 443,
+      "uuid": "7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk",
+          "short_id": "ab3b914f0c9d9de5"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
+      "server": "oc.imfun.fun",
+      "server_port": 18112,
+      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
       "server": "84.247.155.196",
       "server_port": 443,
       "method": "aes-256-gcm",
@@ -50,9 +91,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 07 - xiaohe",
       "server": "103.75.118.228",
-      "server_port": 12683,
+      "server_port": 11452,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -71,30 +112,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "4738dcaa-80c4-4d8b-9006-832692887bbb",
-      "tls": {
-        "enabled": true,
-        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 08 - xiaohe",
       "server": "3.114.220.22",
       "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -115,53 +133,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - xiaohe",
-      "server": "104.238.148.149",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/about?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 09 - xiaohe",
-      "server": "207.148.112.220",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/discuss?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - xiaohe",
       "server": "172.111.146.64",
       "server_port": 80,
       "uuid": "904f8ffa-4652-4076-8f2f-e586807840ec",
@@ -172,14 +144,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 10 - xiaohe",
       "server": "137.220.221.179",
       "server_port": 443,
       "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 11 - xiaohe",
       "server": "31.76.91.72",
       "server_port": 2087,
       "uuid": "524e00ce-ed89-481d-b4a4-6d7017f884e3",
@@ -202,21 +174,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 13 - xiaohe",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "None"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -231,9 +188,7 @@
         "🇯🇵 日本 (Japan) 08 - xiaohe",
         "🇯🇵 日本 (Japan) 09 - xiaohe",
         "🇯🇵 日本 (Japan) 10 - xiaohe",
-        "🇯🇵 日本 (Japan) 11 - xiaohe",
-        "🇯🇵 日本 (Japan) 12 - xiaohe",
-        "🇯🇵 日本 (Japan) 13 - xiaohe"
+        "🇯🇵 日本 (Japan) 11 - xiaohe"
       ]
     },
     {
@@ -250,9 +205,7 @@
         "🇯🇵 日本 (Japan) 08 - xiaohe",
         "🇯🇵 日本 (Japan) 09 - xiaohe",
         "🇯🇵 日本 (Japan) 10 - xiaohe",
-        "🇯🇵 日本 (Japan) 11 - xiaohe",
-        "🇯🇵 日本 (Japan) 12 - xiaohe",
-        "🇯🇵 日本 (Japan) 13 - xiaohe"
+        "🇯🇵 日本 (Japan) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

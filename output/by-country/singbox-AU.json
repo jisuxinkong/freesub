@@ -16,14 +16,14 @@
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "257b0378-01c9-4ded-836d-f94df60bd19c",
+      "uuid": "c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
