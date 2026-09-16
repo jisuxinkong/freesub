@@ -9,16 +9,29 @@ proxies:
   port: 20270
   udp: true
   type: vless
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: vj37-1936vtw.fincore.top
+  server: 34.92.123.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5d77df4a-0b55-4597-b0e6-ae3ef70a72c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0
+    short-id: 56c35a22730a22e5
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 162.128.157.164
   port: 443
   udp: true
   type: vless
@@ -30,7 +43,23 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: www.shopify.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -51,6 +80,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +90,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 rules:
 - MATCH,PROXIES

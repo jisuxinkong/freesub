@@ -8,14 +8,14 @@
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
       "server": "hk-1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "f0eb9f67-ef76-40aa-a1e6-22a11d5a9379",
+      "uuid": "c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -27,7 +27,28 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-      "server": "vj37-1936vtw.fincore.top",
+      "server": "34.92.123.152",
+      "server_port": 443,
+      "uuid": "5d77df4a-0b55-4597-b0e6-ae3ef70a72c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0",
+          "short_id": "56c35a22730a22e5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+      "server": "162.128.157.164",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
       "flow": "xtls-rprx-vision",
@@ -46,8 +67,28 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "headers": {
+          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
       "server": "47.239.6.251",
       "server_port": 13779,
       "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
@@ -73,7 +114,9 @@
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe"
       ]
     },
     {
@@ -82,7 +125,9 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
