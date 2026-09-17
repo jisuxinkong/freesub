@@ -18,7 +18,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: bl3fk52.sysopnova.art
+  server: 193.163.203.253
   port: 443
   udp: true
   type: vless
