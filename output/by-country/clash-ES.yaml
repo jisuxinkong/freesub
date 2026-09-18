@@ -17,18 +17,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 185.174.137.209
-  port: 443
+  server: 85.90.217.42
+  port: 22324
   udp: true
-  type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hlCgGFDYAbecFvJHFs-U0Zbuvk47lcsVVrF1y23Axlc
-    short-id: dc
-  servername: 4pda.to
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 83.147.18.3
   port: 443
