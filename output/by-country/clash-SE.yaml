@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 193.42.39.10
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless

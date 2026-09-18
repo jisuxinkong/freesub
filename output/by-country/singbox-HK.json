@@ -25,18 +25,83 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16112,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "headers": {
+          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
+      "server": "207.56.137.51",
+      "server_port": 443,
+      "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0",
+          "short_id": "f713561d"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

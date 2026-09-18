@@ -26,6 +26,27 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+      "server": "185.174.137.209",
+      "server_port": 443,
+      "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "4pda.to",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hlCgGFDYAbecFvJHFs-U0Zbuvk47lcsVVrF1y23Axlc",
+          "short_id": "dc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
       "server": "83.147.18.3",
       "server_port": 443,
       "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
@@ -50,7 +71,8 @@
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
       ]
     },
     {
@@ -58,7 +80,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

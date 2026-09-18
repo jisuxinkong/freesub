@@ -4,41 +4,137 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "140.238.2.250",
+      "server": "47.80.61.21",
       "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "uuid": "f5851a6e-72da-4e4e-99b2-c79629149503",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wrSzVpmEdnTU7oS5UbKuNnvP57Z7cJkOZRBwRqHM_Hk",
+          "short_id": "6132a3b8dd2d8c6b"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "server": "47.80.62.71",
+      "server_port": 443,
+      "uuid": "0d4cb711-c030-4f13-adf5-6a72dab4121c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "AT4sr3XkuNa7QewDoScx7NnPTCa-Z6o_7ccPgivVDSQ",
+          "short_id": "0b674631d5fc6b93"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-      "server": "218.237.185.230",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "server": "47.80.62.191",
+      "server_port": 443,
+      "uuid": "43e60b75-9920-450a-94ee-8762758ca49c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE",
+          "short_id": "bd0040df20a53b36"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "server": "47.80.62.188",
+      "server_port": 443,
+      "uuid": "e85ca8bc-21a5-418d-a639-00236f0c3d81",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "an8lRnGRbCvX-GW3zuc5woB6hrTxEhfyrGCv-7_QyVo",
+          "short_id": "b229991df62826cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "server": "104.17.147.22",
+      "server_port": 443,
+      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
+      "tls": {
+        "enabled": true,
+        "server_name": "kr11.69lover.my",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/58f8da21d2401b12/stream",
+        "headers": {
+          "Host": "kr11.69lover.my"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
+      "server": "123.111.169.70",
+      "server_port": 443,
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.868068.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "vip.868068.xyz"
+        }
+      }
     },
     {
       "type": "selector",
@@ -47,7 +143,10 @@
         "auto",
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 06 - xiaohe"
       ]
     },
     {
@@ -56,7 +155,10 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
