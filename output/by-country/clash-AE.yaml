@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 17e85193-a95c-4430-9b05-d8f303a34ac3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -17,20 +29,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 31.58.181.88
-  port: 8443
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: cdn.snobvpn.online
+  port: 80
   udp: true
   type: vless
-  uuid: 1e3b5752-e720-4347-b8e9-384697d0ce38
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: uae.unixzone.us
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  network: ws
+  ws-opts:
+    path: /snob-ws
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -48,6 +57,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +66,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -31,6 +31,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 47.239.6.251
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: 47.76.172.190
   port: 443
   udp: true
@@ -43,54 +56,14 @@ proxies:
     short-id: 92ddbafbf38306f5
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 47.83.19.148
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
   udp: true
   type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-  tls: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: wwafj5lhl6bi8au9.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: wwafj5LHl6bI8aU9.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: wwafj5LHl6bI8aU9.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,7 +74,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,6 +84,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
 rules:
 - MATCH,PROXIES

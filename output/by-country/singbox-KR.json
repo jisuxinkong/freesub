@@ -4,32 +4,56 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "146.56.112.110",
-      "server_port": 8888,
-      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "47.80.14.8",
-      "server_port": 443,
-      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w",
-          "short_id": "71110d3f7ef57760"
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
       }
     },
     {
@@ -38,7 +62,8 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
       ]
     },
     {
@@ -46,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
