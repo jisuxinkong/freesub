@@ -5,37 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 104.143.223.56
-  port: 2085
-  udp: true
-  type: vless
-  uuid: b41bac9b-17f7-469f-9df0-05b09140081b
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 104.143.223.67
-  port: 2085
-  udp: true
-  type: vless
-  uuid: c5a28d88-714d-461c-9ef6-178e26e2c840
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: b375bdc2-5a7d-4074-898e-030ad75e3503
+  uuid: 62a096ea-03a4-43a7-920f-50cb0c0a6f42
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 158.160.22.108
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: bp1-6f0572fa31.shamanapp.online
   port: 8444
   udp: true
   type: vless
@@ -48,17 +41,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +49,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,7 +57,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 rules:
 - MATCH,PROXIES
