@@ -26,7 +26,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 143.246.195.138
+  server: 143.246.195.98
   port: 8081
   udp: true
   type: vless
@@ -35,30 +35,18 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: se-arn-14.blook.democrat
+  server: 34.51.231.250
   port: 443
   udp: true
   type: vless
-  uuid: af55163a-8d6c-4d6b-85e7-88e52a12b126
-  flow: xtls-rprx-vision
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   tls: true
   reality-opts:
-    public-key: 73RxRqjaQXn2Vtqw-i5tRd-fHlm1nafliyjksbVWCyE
-    short-id: f9729356
-  servername: se-arn-14.blook.democrat
-  client-fingerprint: chrome
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+    short-id: 79ff7d51e3c56323
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 91.186.216.100
-  port: 7005
-  udp: true
-  type: vless
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
-  tls: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   server: 79.141.174.147
   port: 33743
   udp: true
@@ -69,6 +57,33 @@ proxies:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: svvedko.nxxzxaw.beer
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: svvedko.nxxzxaw.beer
+  client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -83,6 +98,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +110,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES

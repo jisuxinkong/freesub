@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 35.201.181.122
-  port: 443
-  udp: true
-  type: vless
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  tls: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-    short-id: 32f66f37df3f58d2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 130.211.240.128
   port: 443
   udp: true
@@ -28,32 +16,31 @@ proxies:
     short-id: d74a6321deec9f31
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  server: 104.199.134.231
+  port: 28364
+  udp: true
+  type: vless
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
+  servername: www.sony.com
+  client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 35.229.136.113
-  port: 35412
+  server: 35.201.181.122
+  port: 443
   udp: true
   type: vless
-  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
-  flow: xtls-rprx-vision
+  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
   tls: true
   reality-opts:
-    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
-    short-id: 0630b874d595
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 34.80.164.239
-  port: 21776
-  udp: true
-  type: vless
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  servername: www.tesla.com
-  client-fingerprint: firefox
+    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
+    short-id: 32f66f37df3f58d2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +49,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +57,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - MATCH,PROXIES
