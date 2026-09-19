@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 156.226.168.221
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
     public-key: cttKOS1BlF-u-mvX63PWNPJK6W_RXfx1wo8yjBEt1hI
     short-id: a2eb8d694a5480ff
   servername: api-maps.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
