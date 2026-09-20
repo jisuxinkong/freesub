@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  server: 146.56.112.110
+  port: 8888
+  udp: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  server: 34.64.149.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  tls: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    short-id: 3fd0a8ddef3ae5c6
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   server: 132.145.80.230
   port: 80
   udp: true
@@ -15,44 +35,18 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: 47.80.62.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0d4cb711-c030-4f13-adf5-6a72dab4121c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AT4sr3XkuNa7QewDoScx7NnPTCa-Z6o_7ccPgivVDSQ
-    short-id: 0b674631d5fc6b93
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 47.80.14.8
-  port: 443
-  udp: true
-  type: vless
-  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
-    short-id: 71110d3f7ef57760
-  servername: www.samsung.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 47.80.61.21
-  port: 443
+  server: 3.39.4.109
+  port: 13672
   udp: true
   type: vless
-  uuid: f5851a6e-72da-4e4e-99b2-c79629149503
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wrSzVpmEdnTU7oS5UbKuNnvP57Z7cJkOZRBwRqHM_Hk
-    short-id: 6132a3b8dd2d8c6b
-  servername: www.logitech.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
