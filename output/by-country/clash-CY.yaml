@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 194.59.245.250
   port: 40443
