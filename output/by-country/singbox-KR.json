@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "146.56.112.110",
-      "server_port": 8888,
-      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
       "server": "34.64.149.137",
       "server_port": 443,
       "uuid": "700a7a0e-3f27-406c-81d1-aa1abe411af8",
@@ -32,15 +24,39 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "kr02.a0a.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-      "server": "152-69-231-175.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "server": "47.80.14.8",
+      "server_port": 443,
+      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
-        "insecure": false
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w",
+          "short_id": "71110d3f7ef57760"
+        }
       }
     },
     {
@@ -64,22 +80,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-      "server": "218.237.185.230",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-      "server": "140.238.2.250",
-      "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -87,9 +87,7 @@
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
         "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 06 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 04 - xiaohe"
       ]
     },
     {
@@ -99,9 +97,7 @@
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
         "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 06 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
