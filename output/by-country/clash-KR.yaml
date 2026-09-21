@@ -25,19 +25,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   server: 47.80.14.8
   port: 443
   udp: true
@@ -50,20 +37,21 @@ proxies:
     short-id: 71110d3f7ef57760
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: 123.111.169.70
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  server: 172.64.153.3
   port: 443
   udp: true
   type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  uuid: e85ca8bc-21a5-418d-a639-00236f0c3d81
   tls: true
-  servername: vip.868068.xyz
+  servername: d9a9ecdf.69lover.site
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cffp=random
+    path: /api/v2/c17245904dc7e388/stream
     headers:
-      Host: vip.868068.xyz
+      Host: d9a9ecdf.69lover.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,7 +61,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +70,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
 rules:
 - MATCH,PROXIES

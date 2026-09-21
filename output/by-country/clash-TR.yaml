@@ -5,19 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: tr.curry-load.rutube.info
+  server: 104.17.169.13
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 93.190.9.9
+  port: 3090
+  udp: true
+  type: vless
+  uuid: c4a36c29-39db-4782-b7cb-6e391461a999
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 206.1.97.61
   port: 443
   udp: true
   type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
+  uuid: 416cea75-4802-43b1-8f31-c7fa1e211a6a
   tls: true
   reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
+    short-id: d7397feef49deef9
+  servername: Miro.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: zolla2580.karmatel.ir
+  port: 55519
+  udp: true
+  type: vless
+  uuid: 20cba9d0-e235-4205-943a-7e6f0b390ec5
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play-apps-features.googleusercontent.com
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -28,7 +61,34 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: 154.197.75.160
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-4beea30ea96c
+  tls: true
+  servername: 4cz9gseouyns.2iz1ile4upks.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4beea30ea96c/loc-0
+    headers:
+      Host: 4cz9gseouyns.2iz1ile4upks.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  server: 31.210.52.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 206a4c50-2eb6-4b7f-b7a5-15c6ab7b3f4c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HabIMykoF6jIw0rAgi_t3xm_hdWTLFKIpODwNJFjznE
+    short-id: 625a948aab4f
+  servername: tr-ist-5.blook.network
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +96,11 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +108,10 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
 rules:
 - MATCH,PROXIES
