@@ -4,27 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "2a289186-9593-4e59-83e9-822efb2ab5d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-        }
-      }
+      "server": "194.233.74.160",
+      "server_port": 2342,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XV4bvaJIWoxl3IYEC1e6W7"
     },
     {
       "type": "vmess",
@@ -35,16 +20,8 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
       "server": "206.206.76.75",
       "server_port": 443,
       "uuid": "1e3d3634-36ac-43ac-a439-9665d885238f",
@@ -65,8 +42,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-      "server": "146.235.16.130",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "server": "sg2-8sb.6121999.dpdns.org",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
       "flow": "xtls-rprx-vision",
@@ -85,147 +62,39 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-      "server": "194.233.74.160",
-      "server_port": 2342,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XV4bvaJIWoxl3IYEC1e6W7"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-      "server": "43.175.131.30",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/article?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-      "server": "141.193.213.21",
-      "server_port": 8443,
-      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
-      "server": "104.21.5.75",
-      "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-      "server": "170.114.45.6",
-      "server_port": 80,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-      "server": "3.0.111.82",
-      "server_port": 10574,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+      "server": "54.255.121.205",
+      "server_port": 43840,
+      "uuid": "f053b140-9673-4ac5-bc8b-587bfd2c8fd8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.sony.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "tDzxVcXg6zzA1r0I_1j2y4vE0zkgmIVX3_Jf0UG1AnA",
+          "short_id": "ac4b9f02123aa50b"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-      "server": "cloud.lakshan.us",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+      "server": "64.120.95.203",
       "server_port": 119,
       "password": "skynet",
       "tls": {
         "enabled": true,
         "server_name": "cloud.lakshan.us",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
-      "server": "rbgcpqqnbgwlxxn.jiedddym.com",
-      "server_port": 46642,
-      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-Zr7fVQUR-O0IZn6-ZkSom3lwBR1KodQgeAQpO3kVnQ",
-          "short_id": "fe4b900431df7b4a"
         }
       }
     },
@@ -239,14 +108,7 @@
         "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 13 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
       ]
     },
     {
@@ -258,14 +120,7 @@
         "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 13 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
