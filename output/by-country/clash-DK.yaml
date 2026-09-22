@@ -11,31 +11,17 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇩🇰 丹麦 (Denmark) 02 - xiaohe
-  server: 130.49.188.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GW-DWwk3vtXtXBEqQxY_Cf83JIisyyk34rUrtkMZ90g
-  servername: lk.s.dn.iki-servers.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
-  - 🇩🇰 丹麦 (Denmark) 02 - xiaohe
 rules:
 - MATCH,PROXIES
