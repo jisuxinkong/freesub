@@ -5,22 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: sth.free-outline.giize.com
-  port: 1081
+  server: hk-1.gsafevpnapi.com
+  port: 20270
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: wwj19enpp68px8t7
+  type: vless
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 47.240.80.220
-  port: 2052
+  server: 207.57.133.53
+  port: 51135
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
+  type: vless
+  uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
+  servername: www.ebay.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 172.67.130.159
+  server: 104.21.8.201
   port: 2096
   udp: true
   type: vless
@@ -35,14 +45,6 @@ proxies:
     headers:
       Host: cdn-hk.skyvora.app
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 89.223.95.77
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -64,7 +66,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +75,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 rules:
 - MATCH,PROXIES
