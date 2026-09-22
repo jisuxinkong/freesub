@@ -27,21 +27,21 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "185.95.231.233",
+      "server": "45.140.205.2",
       "server_port": 443,
-      "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
+      "uuid": "c795bdd5-0460-42bd-927b-fbff154d2ab5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "store.steampowered.com",
+        "server_name": "promo.ch.iki-servers.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho",
-          "short_id": "a1b2c3d4"
+          "public_key": "he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg",
+          "short_id": ""
         }
       }
     },

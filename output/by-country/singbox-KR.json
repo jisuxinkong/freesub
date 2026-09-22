@@ -24,8 +24,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "server": "146.56.112.110",
+      "server_port": 8888,
+      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -46,7 +54,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
       "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -67,7 +75,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
       "server": "47.80.14.8",
       "server_port": 443,
       "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
@@ -88,7 +96,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -115,7 +123,8 @@
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
         "🇰🇷 韩国 (South Korea) 03 - xiaohe",
         "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 06 - xiaohe"
       ]
     },
     {
@@ -126,7 +135,8 @@
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
         "🇰🇷 韩国 (South Korea) 03 - xiaohe",
         "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,15 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 192.145.31.5
-  port: 8443
+  server: 131.123.37.199
+  port: 8081
   udp: true
   type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 193.148.59.178
   port: 443
@@ -28,17 +27,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
-  server: neth9.lunariai.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 131.123.41.18
   port: 443
   udp: true
@@ -51,7 +39,7 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 144.31.50.236
   port: 443
   udp: true
@@ -63,16 +51,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  server: 131.123.37.199
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +61,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,7 +70,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
 rules:
 - MATCH,PROXIES

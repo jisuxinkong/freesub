@@ -12,20 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 16.171.55.2
+  server: 16.170.214.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 16.170.163.124
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -39,23 +32,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 2.26.124.199
-  port: 443
-  udp: true
-  type: vless
-  uuid: 303c2140-19ff-4eea-b1b1-865d4160d261
-  tls: true
-  reality-opts:
-    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
-    short-id: 53499a662395
-  servername: ai.android
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 143.246.195.98
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 143.246.195.138
   port: 8081
   udp: true
   type: vless
@@ -63,20 +41,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: 31.76.3.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM
-    short-id: 8a2b3c4d5e6f7012
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 143.246.194.60
   port: 8081
   udp: true
@@ -85,6 +50,25 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 16.170.163.124
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: swe.lavivas.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WXkttNfrzidkxIUReO9V_g3EBJ2tjcGLXO8nPsvKI0Y
+  servername: swe.lavivas.org
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,7 +81,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +93,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 rules:
 - MATCH,PROXIES
