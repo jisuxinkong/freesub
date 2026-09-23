@@ -31,7 +31,7 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 193.163.203.253
+  server: bl3fk52.sysopnova.art
   port: 443
   udp: true
   type: vless
