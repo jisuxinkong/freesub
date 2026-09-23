@@ -5,29 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: sth.free-outline.giize.com
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: r6tptrwvddxap6al
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: zfd-hkv2.kunlun01dns.com
-  port: 16113
+  port: 16115
   udp: true
   type: vmess
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 89.223.95.77
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: 34.96.146.210
   port: 443
   udp: true
@@ -38,6 +23,30 @@ proxies:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 98983e4e-31df-4061-bc86-1d6ade4b551b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 47.239.6.251
@@ -53,36 +62,28 @@ proxies:
   servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: 104.21.8.201
-  port: 2096
-  udp: true
-  type: vless
-  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
-  tls: true
-  servername: cdn-hk.skyvora.app
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /f7i3lo6xbs
-    headers:
-      Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  server: 8.218.184.4
-  port: 443
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
   type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-  tls: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  server: 89.223.95.77
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  server: sth.free-outline.giize.com
+  port: 1081
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: wwj19enpp68px8t7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +96,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,5 +109,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
 rules:
 - MATCH,PROXIES
