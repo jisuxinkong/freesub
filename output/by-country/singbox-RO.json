@@ -27,21 +27,21 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-      "server": "146.70.124.85",
+      "server": "193.163.203.253",
       "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
+      "uuid": "441afe11-a180-4516-bb80-80a8a6b38705",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
+        "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
+          "public_key": "gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk",
+          "short_id": "5ee019e02e6ed99a"
         }
       }
     },

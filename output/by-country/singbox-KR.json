@@ -24,25 +24,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "47.80.62.191",
-      "server_port": 443,
-      "uuid": "43e60b75-9920-450a-94ee-8762758ca49c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.logitech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE",
-          "short_id": "bd0040df20a53b36"
-        }
-      }
+      "server": "218.237.185.230",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "hysteria2",
@@ -57,22 +44,13 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-      "server": "140.238.2.250",
-      "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 04 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
       ]
     },
     {
@@ -81,8 +59,7 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 - xiaohe",
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 04 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

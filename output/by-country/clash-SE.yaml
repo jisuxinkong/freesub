@@ -12,14 +12,20 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 143.246.194.60
-  port: 8081
+  server: 194.238.57.23
+  port: 443
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 303c2140-19ff-4eea-b1b1-865d4160d261
+  tls: true
+  reality-opts:
+    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
+    short-id: 53499a662395
+  servername: ai.android
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 79.141.174.147
   port: 33743
@@ -34,6 +40,41 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 13.61.0.108
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 143.246.194.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.ikea.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 16.170.221.224
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 143.246.195.98
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +83,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +95,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -18,17 +18,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 146.70.124.85
+  server: 193.163.203.253
   port: 443
   udp: true
   type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+  servername: yandex.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

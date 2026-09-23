@@ -6,9 +6,23 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+      "server": "45.130.125.201",
+      "server_port": 80,
+      "uuid": "dc8a9493-c54a-459e-d060-81a700000001",
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "nahan-core.netizo09.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "e3c57af3-51e0-4e06-bfd8-f05cc37d5069",
+      "uuid": "39c11784-818b-4e2c-8804-8181abc9c849",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -26,7 +40,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
       "server": "94.183.224.45",
       "server_port": 443,
       "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
@@ -36,7 +50,7 @@
         "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -51,7 +65,8 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
       ]
     },
     {
@@ -59,7 +74,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
