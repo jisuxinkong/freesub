@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 185.71.219.128
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+  tls: true
+  servername: 185.71.219.128
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -15,18 +25,62 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 185.71.219.128
+  port: 2052
+  udp: true
+  type: vless
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+  tls: true
+  servername: 185.71.219.128
+  skip-cert-verify: false
+  client-fingerprint: android
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: 185.71.219.128
+  port: 80
+  udp: true
+  type: vless
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: 185.71.219.128
+  port: 2082
+  udp: true
+  type: vless
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+  tls: true
+  servername: 185.71.219.128
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: play.google.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
