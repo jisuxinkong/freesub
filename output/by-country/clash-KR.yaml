@@ -13,43 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: 3.39.4.109
-  port: 18967
+  server: 146.56.112.110
+  port: 8888
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 151.245.106.49
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  tls: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 - xiaohe
 rules:
 - MATCH,PROXIES
