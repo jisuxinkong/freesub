@@ -5,13 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  server: 85.90.217.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -24,14 +32,6 @@ proxies:
     short-id: d2061bb1
   servername: www.samsung.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 85.90.217.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
