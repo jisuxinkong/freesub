@@ -42,7 +42,7 @@ proxies:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
-  client-fingerprint: ''
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
