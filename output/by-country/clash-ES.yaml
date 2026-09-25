@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -24,6 +17,42 @@ proxies:
     short-id: d2061bb1
   servername: www.samsung.com
   client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: tjkngfhgcghhjgc.adidasm10.ir
+  port: 45000
+  udp: true
+  type: vless
+  uuid: 6ad9f744-342c-4e30-9d4d-3db166e7b0f3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: K_eKlbzI4jFbOPiJV1GQDqF8y_Hqua0zw6ewf-cxJWc
+    short-id: c1ae335b825dd69e
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
 rules:
 - MATCH,PROXIES
