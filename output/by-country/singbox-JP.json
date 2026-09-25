@@ -48,8 +48,29 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
+      "server": "jp-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "3e63ff6e-2017-439b-bdf3-caba1a7a5c56",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gaFVpIOW9RJGuFFisfXVvITfYY5ikKn-4gB89ZQCFHI",
+          "short_id": "89fecfdaf45cd76d"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
       "server": "oc.imfun.fun",
       "server_port": 18112,
       "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
@@ -63,7 +84,8 @@
         "🇯🇵 日本 (Japan) 01 - xiaohe",
         "🇯🇵 日本 (Japan) 02 - xiaohe",
         "🇯🇵 日本 (Japan) 03 - xiaohe",
-        "🇯🇵 日本 (Japan) 04 - xiaohe"
+        "🇯🇵 日本 (Japan) 04 - xiaohe",
+        "🇯🇵 日本 (Japan) 05 - xiaohe"
       ]
     },
     {
@@ -73,7 +95,8 @@
         "🇯🇵 日本 (Japan) 01 - xiaohe",
         "🇯🇵 日本 (Japan) 02 - xiaohe",
         "🇯🇵 日本 (Japan) 03 - xiaohe",
-        "🇯🇵 日本 (Japan) 04 - xiaohe"
+        "🇯🇵 日本 (Japan) 04 - xiaohe",
+        "🇯🇵 日本 (Japan) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

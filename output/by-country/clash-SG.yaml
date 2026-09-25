@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 139.180.220.175
-  port: 8388
+  server: 45.32.120.173
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
+  type: vmess
+  uuid: XEXEVIL
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   server: 172.237.70.226
   port: 22324
@@ -20,21 +21,26 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: 45.32.120.173
-  port: 443
-  udp: true
-  type: vmess
-  uuid: XEXEVIL
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   udp: true
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: 206.206.76.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   server: 5.223.74.174
   port: 2053
@@ -49,47 +55,6 @@ proxies:
   servername: 5.223.74.174
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  server: 206.206.76.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: 146.235.16.130
-  port: 19825
-  udp: true
-  type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: ''
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: 91.193.58.131
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
   server: 54.169.200.246
   port: 41688
   udp: true
@@ -101,6 +66,19 @@ proxies:
     public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
     short-id: 7f342137c20387
   servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -114,8 +92,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,7 +104,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
 rules:
 - MATCH,PROXIES

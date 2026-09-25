@@ -4,12 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "139.180.220.175",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpSevKaUXYQKvSjp"
+      "server": "45.32.120.173",
+      "server_port": 443,
+      "uuid": "XEXEVIL",
+      "security": "auto"
     },
     {
       "type": "vmess",
@@ -22,18 +22,31 @@
     {
       "type": "vmess",
       "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-      "server": "45.32.120.173",
-      "server_port": 443,
-      "uuid": "XEXEVIL",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "ww11.levikogjgfdd.ir",
+      "server": "149.88.23.207",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "server": "206.206.76.75",
+      "server_port": 443,
+      "uuid": "1e3d3634-36ac-43ac-a439-9665d885238f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig",
+          "short_id": "9930177816ab09da"
+        }
+      }
     },
     {
       "type": "vless",
@@ -59,71 +72,6 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-      "server": "206.206.76.75",
-      "server_port": 443,
-      "uuid": "1e3d3634-36ac-43ac-a439-9665d885238f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig",
-          "short_id": "9930177816ab09da"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-      "server": "146.235.16.130",
-      "server_port": 19825,
-      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg2-8sb.6121999.dpdns.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-      "server": "91.193.58.131",
-      "server_port": 2096,
-      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "free-server.techsonic.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/free-server.techsonic.dev",
-        "headers": {
-          "Host": "free-server.techsonic.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
       "server": "54.169.200.246",
       "server_port": 41688,
       "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
@@ -143,6 +91,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
+      "server": "sg2-8sb.6121999.dpdns.org",
+      "server_port": 19825,
+      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg2-8sb.6121999.dpdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -153,9 +122,7 @@
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 09 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 07 - xiaohe"
       ]
     },
     {
@@ -168,9 +135,7 @@
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 09 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
