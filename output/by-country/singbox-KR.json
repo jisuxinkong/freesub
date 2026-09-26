@@ -12,28 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "146.56.112.110",
-      "server_port": 8888,
-      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
