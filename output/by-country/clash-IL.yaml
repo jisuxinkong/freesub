@@ -18,7 +18,7 @@ proxies:
   servername: store.steampowered.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: assets-de2.pleiades.codes
+  server: 72.4.65.116
   port: 443
   udp: true
   type: vless
@@ -26,7 +26,7 @@ proxies:
   tls: true
   servername: assets-de2.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
