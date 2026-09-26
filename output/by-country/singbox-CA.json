@@ -4,32 +4,60 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
-      "server": "158.51.123.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
+      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
       "server": "15.235.75.71",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "FD3rCuOsxOay"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
+      "server": "yyz-ca-01.blncvpn4u.cc",
+      "server_port": 9443,
+      "method": "aes-256-gcm",
+      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
+      "server": "mygptagent.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 04 - xiaohe",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
+      "server": "158.51.123.42",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - xiaohe",
       "server": "104.21.70.21",
       "server_port": 443,
       "uuid": "efe19c5a-0ea1-4666-8a4c-4a33f4670775",
@@ -51,7 +79,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - xiaohe",
       "server": "66.70.179.124",
       "server_port": 443,
       "uuid": "c8f9e08d-7d07-4059-9f71-0b014b9e0ec7",
@@ -71,27 +99,19 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - xiaohe",
-      "server": "yyz-ca-01.blncvpn4u.cc",
-      "server_port": 9443,
-      "method": "aes-256-gcm",
-      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
-    },
-    {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - xiaohe",
-      "server": "66.163.113.176",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaohe",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaohe",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - xiaohe",
+      "server": "66.163.113.176",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
     },
     {
@@ -106,7 +126,8 @@
         "🇨🇦 加拿大 (Canada) 05 - xiaohe",
         "🇨🇦 加拿大 (Canada) 06 - xiaohe",
         "🇨🇦 加拿大 (Canada) 07 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 08 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 08 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 09 - xiaohe"
       ]
     },
     {
@@ -120,7 +141,8 @@
         "🇨🇦 加拿大 (Canada) 05 - xiaohe",
         "🇨🇦 加拿大 (Canada) 06 - xiaohe",
         "🇨🇦 加拿大 (Canada) 07 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 08 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 08 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

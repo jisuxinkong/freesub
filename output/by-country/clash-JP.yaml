@@ -26,19 +26,6 @@ proxies:
     headers:
       Host: 168.138.43.75
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -51,6 +38,14 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
+  server: oc.imfun.fun
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

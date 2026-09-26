@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 智利 (Chile) 01 - xiaohe
+- name: 🇿🇦 南非 (South Africa) 01 - xiaohe
   server: platform118.golnamakcert.top
   port: 80
   udp: true
@@ -15,7 +15,7 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 02 - xiaohe
+- name: 🇿🇦 南非 (South Africa) 02 - xiaohe
   server: platform117.golnamakcert.top
   port: 80
   udp: true
@@ -31,14 +31,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 智利 (Chile) 01 - xiaohe
-  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇿🇦 南非 (South Africa) 01 - xiaohe
+  - 🇿🇦 南非 (South Africa) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 (Chile) 01 - xiaohe
-  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇿🇦 南非 (South Africa) 01 - xiaohe
+  - 🇿🇦 南非 (South Africa) 02 - xiaohe
 rules:
 - MATCH,PROXIES
