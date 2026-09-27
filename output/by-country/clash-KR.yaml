@@ -12,32 +12,17 @@ proxies:
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: 43.155.230.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: ea833f3a-4a7a-4978-b5a9-a22e446f0a81
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: B8RE9fNqS0eV7jXJcjQNuk4H4skMAa-0nQZ4orb5sCc
-    short-id: abcdef01
-  servername: www.bing.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 - xiaohe
 rules:
 - MATCH,PROXIES
