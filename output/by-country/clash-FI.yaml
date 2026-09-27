@@ -30,18 +30,6 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 212.193.18.183
   port: 8446
   udp: true
@@ -56,17 +44,33 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: snob-grpc
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 104.16.72.101
-  port: 80
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: d5598622-46b8-b017-3af3-232500000001
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: fi10-node.rumedia-cdn.com
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  tls: true
+  servername: st6dbbc.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /sync
+    path: /cdn/v3/live
     headers:
-      Host: nahan-core.netizo09.workers.dev
+      Host: st6dbbc.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select

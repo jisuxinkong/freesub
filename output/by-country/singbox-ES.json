@@ -20,28 +20,8 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-      "server": "mygptagent.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
       "server": "87.76.179.117",
       "server_port": 7443,
       "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
@@ -57,6 +37,26 @@
           "enabled": true,
           "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
           "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "server": "mygptagent.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
         }
       }
     },

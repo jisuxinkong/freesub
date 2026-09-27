@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 217.30.10.44
   port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 185.223.57.10
   port: 33743
   udp: true
@@ -32,19 +25,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 201.10.90.202
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 217.30.10.44
+  port: 9095
   udp: true
-  type: vless
-  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
-  tls: true
-  reality-opts:
-    public-key: Fy5oUXHjwXPsnyRzZAHohjOd4dYkDj9mlIhr-Xh6tTc
-    short-id: 6fddaa
-  servername: lineartronic-ii.subaru-volga.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 50.7.249.154
   port: 443
   udp: true
@@ -53,6 +41,17 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: plandland.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 50.7.249.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: polik.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
@@ -76,17 +75,6 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 144.31.5.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 82.118.22.161
   port: 443
   udp: true
@@ -112,7 +100,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,6 +113,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES

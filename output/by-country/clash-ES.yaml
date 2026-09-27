@@ -20,6 +20,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  server: 87.76.179.117
+  port: 7443
+  udp: true
+  type: vless
+  uuid: cb15d1b0-e48b-4c4c-b98a-fa1103aa3723
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: mygptagent.org
   port: 443
   udp: true
@@ -35,19 +48,6 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 87.76.179.117
-  port: 7443
-  udp: true
-  type: vless
-  uuid: cb15d1b0-e48b-4c4c-b98a-fa1103aa3723
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: www.samsung.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
