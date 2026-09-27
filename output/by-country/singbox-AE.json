@@ -5,36 +5,36 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01 - xiaohe",
-      "server": "62.60.152.1",
-      "server_port": 56328,
-      "uuid": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+      "server": "94.183.224.45",
+      "server_port": 443,
+      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "table.vkroom-it-service.xyz",
+        "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M",
-          "short_id": "f3a9c21e8b6d4571"
+          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
+          "short_id": "a1b2c3d4e5f67890"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 02 - xiaohe",
-      "server": "afra4.nimbaha9.ir",
-      "server_port": 2052,
-      "uuid": "e0ff8a9b-dad3-4671-baf4-c8d466d1eb48",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/eyurri",
+        "path": "/",
         "headers": {
-          "Host": "afra4.nimbaha9.ir"
+          "Host": "uae.unixzone.us"
         }
       }
     },
@@ -43,16 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - xiaohe",
-        "🇮🇷 IR 02 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - xiaohe",
-        "🇮🇷 IR 02 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

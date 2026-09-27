@@ -12,36 +12,21 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 46.8.200.91
+  server: 31.76.65.234
   port: 443
   udp: true
   type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: cc39844c-d9ba-4394-9cae-395933f4e353
   tls: true
-  servername: cf3.rumedia-cdn.com
+  servername: 31.76.65.234.fwqfw783rg2dad.website
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: ios
   network: ws
   ws-opts:
-    path: /casc
+    path: /websocket
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: 31.76.65.234.fwqfw783rg2dad.website
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -53,6 +38,19 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 45.130.254.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ
+    short-id: eba1498e012ef580
+  servername: amazon.de
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -20,18 +20,63 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "server": "122.10.117.1",
+      "server_port": 11674,
+      "uuid": "fe40f32a-b03d-4ada-8bee-00f41b766098",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs",
+          "short_id": "d889b977"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+      "server": "nycqg19zkwacpm1b.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "NYcQg19zkwaCPM1B.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "NYcQg19zkwaCPM1B.v.3dns.vip"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
