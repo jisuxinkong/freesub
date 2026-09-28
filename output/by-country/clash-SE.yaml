@@ -5,47 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 16.171.55.2
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 79.141.174.147
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 172.238.244.13
-  port: 17000
+  server: 70.34.212.124
+  port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: se.chick-chirik.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 68d89911-b92d-46fe-9007-3645c3b285f0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8
-    short-id: e9eb910e5af883e3
-  servername: se.chick-chirik.com
-  client-fingerprint: edge
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 5.157.10.148
   port: 443
   udp: true
@@ -58,14 +24,20 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 70.34.212.124
-  port: 8388
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: app.goonars.com
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  type: vless
+  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0
+    short-id: 95e51c18
+  servername: app.goonars.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -79,6 +51,40 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 172.238.244.13
+  port: 17000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 31.207.7.49
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  tls: true
+  servername: secas.astrafic.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
 proxy-groups:
 - name: PROXIES
   type: select
