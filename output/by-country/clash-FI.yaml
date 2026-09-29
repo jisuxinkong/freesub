@@ -17,6 +17,16 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 144.31.150.4
+  port: 52006
+  udp: true
+  type: vless
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kimi.fastaichat.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 185.79.138.71
   port: 448
   udp: true
@@ -28,18 +38,19 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 138.124.17.179
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: fi.omuservice.tech
   port: 443
   udp: true
   type: vless
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4
-    short-id: ffdf2e6056999b66
-  servername: finewl1.krusofiya.fun
-  client-fingerprint: edge
+    public-key: KEoz-uTjqCGwtNakCD-XewbDk_8Vwm_nFv0zg3c2Syg
+    short-id: ed7bc7b125
+  servername: www.nl.ozone.nl
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +59,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +68,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

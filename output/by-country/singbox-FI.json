@@ -26,6 +26,23 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "144.31.150.4",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kimi.fastaichat.ru",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
       "server": "185.79.138.71",
       "server_port": 448,
       "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
@@ -45,21 +62,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "138.124.17.179",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "server": "fi.omuservice.tech",
       "server_port": 443,
-      "uuid": "ca5ffe64-81e0-42f0-a136-03cc4f662a4f",
+      "uuid": "228ecfd3-9bf0-42fd-a50e-581f84022513",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "finewl1.krusofiya.fun",
+        "server_name": "www.nl.ozone.nl",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4",
-          "short_id": "ffdf2e6056999b66"
+          "public_key": "KEoz-uTjqCGwtNakCD-XewbDk_8Vwm_nFv0zg3c2Syg",
+          "short_id": "ed7bc7b125"
         }
       }
     },
@@ -70,7 +88,8 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
       ]
     },
     {
@@ -79,7 +98,8 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

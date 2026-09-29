@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: aksai.org
   port: 443
   udp: true
@@ -40,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
 rules:
 - MATCH,PROXIES

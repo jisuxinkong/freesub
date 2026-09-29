@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 85.90.217.42
   port: 22324
   udp: true
@@ -19,6 +12,13 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 92.118.127.16
   port: 443
@@ -31,7 +31,7 @@ proxies:
     public-key: Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg
     short-id: 908563a721d9bdcd
   servername: sp1.extremumnews.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: mygptagent.org
   port: 443
