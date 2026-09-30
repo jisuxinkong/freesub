@@ -12,32 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 176.109.106.182
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-  servername: dl.google.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 113.30.154.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff2936d3-caa4-4b79-bb96-1475bd39ceda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -49,6 +23,21 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 176.108.247.31
+  port: 9844
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +54,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

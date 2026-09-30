@@ -6,6 +6,32 @@
     {
       "type": "vless",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "daf485ba-60fc-4166-a72c-8d2a5407cbc5",
+      "tls": {
+        "enabled": true,
+        "server_name": "KIeVH9yXcGg14-GY4wXqCAV0pegKd.D-0EZpK5xP5wk8ltDgb6EVLPGC-jin.WORkeRS.Dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/zM8ELyqEIYeZ3ijacV9kuK?ed",
+        "headers": {
+          "Host": "kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -21,20 +47,6 @@
           "enabled": true,
           "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
           "short_id": "0eec442e7b34d2f2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
         }
       }
     },

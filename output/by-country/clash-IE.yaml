@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: 188.114.97.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: daf485ba-60fc-4166-a72c-8d2a5407cbc5
+  tls: true
+  servername: KIeVH9yXcGg14-GY4wXqCAV0pegKd.D-0EZpK5xP5wk8ltDgb6EVLPGC-jin.WORkeRS.Dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/zM8ELyqEIYeZ3ijacV9kuK?ed
+    headers:
+      Host: kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -17,17 +32,6 @@ proxies:
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select

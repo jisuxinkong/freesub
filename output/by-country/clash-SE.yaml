@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 79.141.174.147
+  server: 193.42.39.10
   port: 33743
   udp: true
   type: vless
