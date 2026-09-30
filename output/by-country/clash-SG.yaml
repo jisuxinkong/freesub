@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   udp: true
   type: vmess
@@ -13,23 +13,27 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 5.223.41.218
+  server: 5.223.41.47
   port: 80
   udp: true
   type: vless
-  uuid: 02bfdbab-06ce-41ae-ba7b-bd9c4f5f156e
+  uuid: e81daee0-e509-4983-a14a-763d3951c94d
   network: ws
   ws-opts:
     path: /
 - name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: 5.223.41.83
-  port: 80
+  server: 146.235.16.130
+  port: 19825
   udp: true
   type: vless
-  uuid: 790b8505-6f06-432a-8c63-f6c5b9343496
-  network: ws
-  ws-opts:
-    path: /
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: ''
 - name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
   server: 54.169.200.246
   port: 41688
@@ -44,31 +48,27 @@ proxies:
   servername: www.intel.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: 146.235.16.130
-  port: 19825
+  server: 91.193.58.131
+  port: 2096
   udp: true
   type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: ''
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
-  udp: true
-  type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+  server: 139.180.220.175
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: qpSevKaUXYQKvSjp
 proxy-groups:
 - name: PROXIES
   type: select
