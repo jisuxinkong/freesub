@@ -12,57 +12,8 @@
       "password": "tkhHVxxfM2QErBWe"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "lineartronic-ii.subaru-volga.com",
-      "server_port": 443,
-      "uuid": "6db6b948-655f-4f68-a9e7-865050e05b31",
-      "tls": {
-        "enabled": true,
-        "server_name": "lineartronic-ii.subaru-volga.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jOOQIxM4PRxWaZDfTj_63smCGJX_inthmmb8WG-SIHI",
-          "short_id": "6fda"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
       "server": "179.198.49.43",
       "server_port": 443,
       "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
@@ -83,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "78.17.97.201",
       "server_port": 443,
       "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
@@ -93,7 +44,7 @@
         "server_name": "ozone.nl",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -104,7 +55,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
       "server": "188.114.96.19",
       "server_port": 80,
       "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
@@ -118,26 +69,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
-      "server": "144.31.5.3",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl4.moritech.net",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -145,11 +76,7 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ]
     },
     {
@@ -159,11 +86,7 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

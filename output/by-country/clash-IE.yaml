@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 188.114.97.3
+  server: web.code-sandbox.blog
   port: 443
   udp: true
   type: vless
-  uuid: daf485ba-60fc-4166-a72c-8d2a5407cbc5
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  flow: xtls-rprx-vision
   tls: true
-  servername: KIeVH9yXcGg14-GY4wXqCAV0pegKd.D-0EZpK5xP5wk8ltDgb6EVLPGC-jin.WORkeRS.Dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/zM8ELyqEIYeZ3ijacV9kuK?ed
-    headers:
-      Host: kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev
+  reality-opts:
+    public-key: Y0OENG_faNE37KNgR5p6fnuIXmoES6sVuCFnWsbUzUw
+    short-id: d1d479faa1c1d92f
+  servername: web.code-sandbox.blog
+  client-fingerprint: qq
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   server: 3.9.135.156
   port: 51847

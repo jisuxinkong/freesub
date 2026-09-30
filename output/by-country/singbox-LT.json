@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe",
-      "server": "185.143.179.179",
-      "server_port": 25026,
-      "uuid": "441a29b2-d9aa-47d5-9209-0a9191479f9f",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+      "server": "94.176.234.161",
+      "server_port": 443,
+      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "RVh0D446O5pKnOqlNkJNxSGGbmzl8swn4YBXYce1HSw",
-          "short_id": "34c465417d7ebca0"
+          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
+          "short_id": "dbb2ef1c7c"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
