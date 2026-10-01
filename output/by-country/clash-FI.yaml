@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 91.108.241.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kjly4cLUp4_P04_3lM1l_NJu8-vFcING7tBNtAXk7Go
+    short-id: db09859d9be0fa2b
+  servername: mail.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -22,11 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -18,18 +18,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
+      "server": "151.241.166.72",
+      "server_port": 443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.gaz-service.shop",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

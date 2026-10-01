@@ -4,33 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.167.78
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 194.26.141.148
   port: 8443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: fdghyt.com
   skip-cert-verify: false
+  client-fingerprint: android
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: fdghyt.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
