@@ -4,18 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "104.18.46.46",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21019,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "trojan",
@@ -36,41 +30,18 @@
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-      "server": "yg1.ygkkk.dpdns.org",
+      "server": "aksai.org",
       "server_port": 443,
-      "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jmp1.907737.xyz",
+        "server_name": "aksai.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm",
-        "headers": {
-          "Host": "jmp1.907737.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
-      "server": "195.58.144.56",
-      "server_port": 11907,
-      "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07",
-      "tls": {
-        "enabled": true,
-        "server_name": "195.58.144.56",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "path": "/linkvws"
       }
     },
     {
@@ -80,8 +51,7 @@
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
       ]
     },
     {
@@ -90,8 +60,7 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "91.108.241.39",
-      "server_port": 443,
-      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mail.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Kjly4cLUp4_P04_3lM1l_NJu8-vFcING7tBNtAXk7Go",
-          "short_id": "db09859d9be0fa2b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -41,6 +20,26 @@
           "enabled": true,
           "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
           "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "35.228.61.63",
+      "server_port": 443,
+      "uuid": "06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU",
+          "short_id": "d4b34bc6b3d2b5ab"
         }
       }
     },

@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 91.108.241.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Kjly4cLUp4_P04_3lM1l_NJu8-vFcING7tBNtAXk7Go
-    short-id: db09859d9be0fa2b
-  servername: mail.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -29,6 +16,18 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 35.228.61.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  tls: true
+  reality-opts:
+    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
+    short-id: d4b34bc6b3d2b5ab
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
