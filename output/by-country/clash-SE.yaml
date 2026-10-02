@@ -18,13 +18,17 @@ proxies:
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 185.91.53.251
-  port: 8443
+  server: 143.246.196.207
+  port: 443
   udp: true
-  type: trojan
-  password: ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x
-  sni: sw-one.quickgo.cc
-  skip-cert-verify: false
+  type: vless
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
