@@ -5,35 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 167.82.76.27
-  port: 443
+  server: 216.106.187.60
+  port: 22324
   udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: 51.195.126.38
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  server: 31.77.168.21
-  port: 443
-  udp: true
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
   server: 31.77.161.15
   port: 443
   udp: true
@@ -46,29 +25,27 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  server: 51.195.126.38
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: 31.77.168.33
-  port: 443
-  udp: true
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 31.77.168.35
-  port: 443
-  udp: true
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
   server: aidrivercat.org
   port: 443
   udp: true
@@ -84,33 +61,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: 82.118.19.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: 144.31.125.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: 85c86a9863
-  servername: www.intel.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
   server: 82.39.171.12
   port: 443
   udp: true
@@ -123,28 +74,6 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  server: 122.8.45.4
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2d24e797-ec6c-0808-dd31-9cd22b5dfdc7
-  tls: true
-  reality-opts:
-    public-key: sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU
-  servername: cdn.steamstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  server: 216.106.187.60
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,12 +85,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 04 - xiaohe
   - 🇩🇪 德国 (Germany) 05 - xiaohe
   - 🇩🇪 德国 (Germany) 06 - xiaohe
-  - 🇩🇪 德国 (Germany) 07 - xiaohe
-  - 🇩🇪 德国 (Germany) 08 - xiaohe
-  - 🇩🇪 德国 (Germany) 09 - xiaohe
-  - 🇩🇪 德国 (Germany) 10 - xiaohe
-  - 🇩🇪 德国 (Germany) 11 - xiaohe
-  - 🇩🇪 德国 (Germany) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -173,11 +96,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 04 - xiaohe
   - 🇩🇪 德国 (Germany) 05 - xiaohe
   - 🇩🇪 德国 (Germany) 06 - xiaohe
-  - 🇩🇪 德国 (Germany) 07 - xiaohe
-  - 🇩🇪 德国 (Germany) 08 - xiaohe
-  - 🇩🇪 德国 (Germany) 09 - xiaohe
-  - 🇩🇪 德国 (Germany) 10 - xiaohe
-  - 🇩🇪 德国 (Germany) 11 - xiaohe
-  - 🇩🇪 德国 (Germany) 12 - xiaohe
 rules:
 - MATCH,PROXIES
