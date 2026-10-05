@@ -12,36 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
