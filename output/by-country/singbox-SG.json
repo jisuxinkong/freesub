@@ -4,12 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "139.180.220.175",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpSevKaUXYQKvSjp"
+      "server": "104.21.39.30",
+      "server_port": 80,
+      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTEwyZVI5T3BYZDBxTzhPRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -22,6 +28,27 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "146.235.16.130",
+      "server_port": 19825,
+      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg2-8sb.6121999.dpdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
       "server": "54.169.200.246",
       "server_port": 41688,
       "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
@@ -42,7 +69,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+      "server": "175.29.23.179",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "headers": {
+          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
       "server": "news.zoom.us",
       "server_port": 8443,
       "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
@@ -64,27 +110,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-      "server": "146.235.16.130",
-      "server_port": 19825,
-      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg2-8sb.6121999.dpdns.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -93,7 +118,8 @@
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
       ]
     },
     {
@@ -104,7 +130,8 @@
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -35,12 +35,18 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: 149.102.149.207
+  server: 23.81.34.204
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  type: vless
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  servername: speed.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
   server: 46.250.250.149
   port: 2053
@@ -54,18 +60,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
-  server: 23.81.34.204
-  port: 443
+  server: 57.129.130.200
+  port: 52014
   udp: true
   type: vless
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  flow: xtls-rprx-vision
+  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
   tls: true
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  servername: speed.cloudflare.com
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
   server: 57.129.132.223
   port: 80
@@ -96,20 +104,26 @@ proxies:
     headers:
       Host: pahobac.org
 - name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
-  server: aksai.org
+  server: 193.163.203.170
   port: 443
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
   tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  server: 149.102.149.207
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   server: 87.239.249.137
   port: 443
   udp: true
@@ -122,7 +136,7 @@ proxies:
     short-id: 91af08b1ce1f
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   server: 107.181.151.241
   port: 443
   udp: true
@@ -135,8 +149,8 @@ proxies:
     short-id: 18e4d2d21241
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
-  server: server.slavkiti.monster
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  server: 107.181.151.39
   port: 443
   udp: true
   type: vless
@@ -147,7 +161,7 @@ proxies:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
     short-id: 8325360e8bd2
   servername: www.foxsports.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -166,6 +180,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -184,5 +199,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
 rules:
 - MATCH,PROXIES

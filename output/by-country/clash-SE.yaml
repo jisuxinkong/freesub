@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: psf-2.weedly.top
+  server: 167.82.0.1
   port: 80
   udp: true
   type: vless
