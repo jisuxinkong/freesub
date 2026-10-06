@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: e7q.internet-booster.online
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 0ab2bb4f-c8ad-4c52-a94f-7a69c71d76f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AuLWE8R3WD4DwnDxVHgqEcNjyge1btt5PdaUUArdCVk
+    short-id: 2b03d7853fc8faa6
+  servername: ads.x5.ru
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+rules:
+- MATCH,PROXIES
