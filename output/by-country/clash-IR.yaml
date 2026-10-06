@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 77.110.97.158
+- name: 🇮🇷 IR 01 - xiaohe
+  server: 85.90.196.11
   port: 443
   udp: true
   type: vless
@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /glasspanel/guest000_0_5de14443985f/
@@ -23,12 +24,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 109.69.17.166
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0d6e70a5-abfd-4766-8ad4-e502173ba82b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lVSON4vUK765zNEFQtf0GbZNDc-g37JMairlF7hg6y0
-    short-id: bb34e8c0603c6686
-  servername: ru.virtez.pro
-  client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -35,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

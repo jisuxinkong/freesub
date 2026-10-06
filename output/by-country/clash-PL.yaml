@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.44
-  port: 9062
+  port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
+  password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 82.118.22.161
   port: 443
@@ -37,6 +37,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 90.156.218.163
+  port: 443
+  udp: true
+  type: vless
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: eh.vk.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +58,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +67,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

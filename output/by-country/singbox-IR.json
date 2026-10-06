@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "85.90.196.11",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "headers": {
+          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

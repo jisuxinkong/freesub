@@ -5,22 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "new3.api.go-vpn.club",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "45.192.201.140",
       "server_port": 443,
-      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
-      "flow": "xtls-rprx-vision",
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
         "enabled": true,
-        "server_name": "cdnjs.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
-          "short_id": "17d334ad29b2ff40"
+        "server_name": "argo6.5671234.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e8e2cecb6188f7fb",
+        "headers": {
+          "Host": "argo6.5671234.xyz"
         }
       }
     },
@@ -29,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
