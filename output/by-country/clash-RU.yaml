@@ -5,16 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 162.159.38.127
-  port: 2052
+  server: 109.69.17.166
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: 0d6e70a5-abfd-4766-8ad4-e502173ba82b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lVSON4vUK765zNEFQtf0GbZNDc-g37JMairlF7hg6y0
+    short-id: bb34e8c0603c6686
+  servername: ru.virtez.pro
+  client-fingerprint: safari
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 45.12.75.242
   port: 26424
