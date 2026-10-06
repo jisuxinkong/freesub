@@ -13,12 +13,12 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 51.79.85.185
-  port: 8118
+  server: 51.222.12.127
+  port: 445
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: zDNVedRFPQexG9v
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
   server: 158.51.123.42
   port: 22324
@@ -28,27 +28,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   server: 51.222.107.43
   port: 2083
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  server: 51.222.12.127
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -56,6 +42,13 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
+  server: 51.222.141.125
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +60,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 04 - xiaohe
   - 🇨🇦 加拿大 (Canada) 05 - xiaohe
   - 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +71,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 04 - xiaohe
   - 🇨🇦 加拿大 (Canada) 05 - xiaohe
   - 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 07 - xiaohe
 rules:
 - MATCH,PROXIES

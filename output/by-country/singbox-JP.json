@@ -27,21 +27,6 @@
     {
       "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 02 - xiaohe",
-      "server": "172.111.146.64",
-      "server_port": 80,
-      "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "172.111.146.64"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
       "server": "168.138.43.75",
       "server_port": 80,
       "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
@@ -60,8 +45,7 @@
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01 - xiaohe",
-        "🇯🇵 日本 (Japan) 02 - xiaohe",
-        "🇯🇵 日本 (Japan) 03 - xiaohe"
+        "🇯🇵 日本 (Japan) 02 - xiaohe"
       ]
     },
     {
@@ -69,8 +53,7 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 日本 (Japan) 01 - xiaohe",
-        "🇯🇵 日本 (Japan) 02 - xiaohe",
-        "🇯🇵 日本 (Japan) 03 - xiaohe"
+        "🇯🇵 日本 (Japan) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
