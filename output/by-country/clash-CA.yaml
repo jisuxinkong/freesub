@@ -13,20 +13,25 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
+  server: 45.148.103.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: ca-root.sworkingvpn.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
   server: 51.222.107.43
   port: 2083
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
-- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 158.51.123.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
   server: 23.162.200.198
   port: 18000
@@ -42,12 +47,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  server: milo.rubinaz.xyz
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +57,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 03 - xiaohe
   - 🇨🇦 加拿大 (Canada) 04 - xiaohe
   - 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +67,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 03 - xiaohe
   - 🇨🇦 加拿大 (Canada) 04 - xiaohe
   - 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 06 - xiaohe
 rules:
 - MATCH,PROXIES
