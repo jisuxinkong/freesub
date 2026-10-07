@@ -30,18 +30,16 @@ proxies:
   servername: web.eitaa.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: van2.ragnarok-it.xyz
-  port: 8446
+  server: psf-3.weedly.top
+  port: 80
   udp: true
   type: vless
-  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
-    short-id: 7bac4b112d30d1
-  servername: amd.com
-  client-fingerprint: edge
+  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: machinemag.ir
 proxy-groups:
 - name: PROXIES
   type: select

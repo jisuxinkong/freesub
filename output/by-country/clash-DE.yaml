@@ -5,34 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: 144.31.63.114
-  port: 443
-  udp: true
-  type: vless
-  uuid: c797b9ad-6f9e-4eee-befd-eef119ec3637
-  tls: true
-  servername: assets-de.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
   server: 51.195.126.38
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  server: 188.114.96.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  tls: true
+  servername: s4ws.ragingbull.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s4ws.ragingbull.de5.net
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
   server: 82.39.171.12
   port: 443
@@ -47,76 +53,49 @@ proxies:
   servername: yahoo.com
   client-fingerprint: ios
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: de12.h1cloud.net
-  port: 25095
-  udp: true
-  type: vless
-  uuid: 95003356-20f9-4c84-a21f-2f9c1fc285eb
-  tls: true
-  reality-opts:
-    public-key: pvXuNe35fkSbA-CVmh6_b3ADAXLY8tBONjnwE8HM8yY
-    short-id: 397c81bed08f3f78
-  servername: www.chip.de
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f3d967fe8981
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 82.118.19.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  server: 176.108.252.139
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: 31.76.35.27
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
-    short-id: b76a6309
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: 185.233.80.164
-  port: 443
+  server: 85.121.124.65
+  port: 8443
   udp: true
   type: vless
   uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   tls: true
-  servername: s3ws.ragingbull.de5.net
+  servername: s4ws.ragingbull.de5.net
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /wsrb7k2m
     headers:
-      Host: s3ws.ragingbull.de5.net
+      Host: s4ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  server: 188.114.97.3
+  port: 2087
+  udp: true
+  type: vless
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  tls: true
+  servername: s4ws.ragingbull.de5.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s4ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  server: cctvhikvision.center
+  port: 2053
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,8 +108,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 05 - xiaohe
   - 🇩🇪 德国 (Germany) 06 - xiaohe
   - 🇩🇪 德国 (Germany) 07 - xiaohe
-  - 🇩🇪 德国 (Germany) 08 - xiaohe
-  - 🇩🇪 德国 (Germany) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -143,7 +120,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 05 - xiaohe
   - 🇩🇪 德国 (Germany) 06 - xiaohe
   - 🇩🇪 德国 (Germany) 07 - xiaohe
-  - 🇩🇪 德国 (Germany) 08 - xiaohe
-  - 🇩🇪 德国 (Germany) 09 - xiaohe
 rules:
 - MATCH,PROXIES

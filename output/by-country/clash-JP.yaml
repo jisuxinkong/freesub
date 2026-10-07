@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
+  server: musical-terrier.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: musical-terrier.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
   server: 168.138.43.75
   port: 80
   udp: true
@@ -17,7 +25,15 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+  server: intense-sole.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: intense-sole.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -30,19 +46,45 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 172.111.146.64
-  port: 80
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: assuring-skink.rooster465.autos
+  port: 443
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
+  type: trojan
+  password: UX82473651
+  sni: assuring-skink.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: evolving-platypus.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evolving-platypus.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  server: fancy-javelin.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: fancy-javelin.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 104.21.0.87
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /tyxyws
     headers:
-      Host: 172.111.146.64
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +93,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 01 - xiaohe
   - 🇯🇵 日本 (Japan) 02 - xiaohe
   - 🇯🇵 日本 (Japan) 03 - xiaohe
+  - 🇯🇵 日本 (Japan) 04 - xiaohe
+  - 🇯🇵 日本 (Japan) 05 - xiaohe
+  - 🇯🇵 日本 (Japan) 06 - xiaohe
+  - 🇯🇵 日本 (Japan) 07 - xiaohe
+  - 🇯🇵 日本 (Japan) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +106,10 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 01 - xiaohe
   - 🇯🇵 日本 (Japan) 02 - xiaohe
   - 🇯🇵 日本 (Japan) 03 - xiaohe
+  - 🇯🇵 日本 (Japan) 04 - xiaohe
+  - 🇯🇵 日本 (Japan) 05 - xiaohe
+  - 🇯🇵 日本 (Japan) 06 - xiaohe
+  - 🇯🇵 日本 (Japan) 07 - xiaohe
+  - 🇯🇵 日本 (Japan) 08 - xiaohe
 rules:
 - MATCH,PROXIES
