@@ -13,12 +13,12 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 51.222.12.127
-  port: 445
+  server: 51.222.107.43
+  port: 2083
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
   server: 158.51.123.42
   port: 22324
@@ -28,13 +28,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  server: 51.222.107.43
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
-- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -42,13 +35,19 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  server: 51.222.141.125
-  port: 445
+- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
+  server: 51.79.85.185
+  port: 8118
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
+  server: milo.rubinaz.xyz
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 proxy-groups:
 - name: PROXIES
   type: select
