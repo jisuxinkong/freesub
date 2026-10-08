@@ -5,26 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: ww11.levikogjgfdd.ir
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 149.88.23.207
   port: 18000
   udp: true
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 54.169.200.246
-  port: 41688
-  udp: true
-  type: vless
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  servername: www.intel.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: 146.235.16.130
   port: 19825
@@ -39,6 +37,17 @@ proxies:
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: ''
 - name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   server: 46.137.202.178
   port: 12512
   udp: true
@@ -51,18 +60,43 @@ proxies:
     short-id: e692a8250d2e2fd0
   servername: www.intel.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: 170.114.46.6
-  port: 80
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+  server: 54.169.200.246
+  port: 41688
   udp: true
   type: vless
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
+  server: holy-lamb.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: holy-lamb.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  server: 139.162.27.96
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
   server: 103.25.202.102
   port: 443
   udp: true
@@ -77,8 +111,16 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  server: 52.221.220.227
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pet-antelope.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  server: 173.234.14.85
   port: 2096
   udp: true
   type: vless
@@ -86,13 +128,13 @@ proxies:
   tls: true
   servername: free-server.techsonic.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
   server: support.zoom.us
   port: 8443
   udp: true
@@ -101,12 +143,33 @@ proxies:
   tls: true
   servername: primelinelk.me
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  server: free.nadun.store
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  tls: true
+  servername: free.nadun.store
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,6 +183,12 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,5 +202,11 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -13,28 +13,52 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: kind-stork.rooster465.autos
+  server: noted-cougar.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+  server: 3.39.225.215
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: kind-stork.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: amazing-peacock.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  server: 52.78.203.191
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: amazing-peacock.rooster465.autos
+  sni: delicate-buck.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   server: main-fawn.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  server: 3.35.217.113
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: amazing-peacock.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -45,6 +69,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +81,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
 rules:
 - MATCH,PROXIES

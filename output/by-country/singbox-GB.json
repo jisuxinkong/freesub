@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
       "server": "149.102.149.207",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "LXchLsIwtCeUAUgu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "149.102.149.207",
       "server_port": 80,
       "method": "aes-256-gcm",
       "password": "LXchLsIwtCeUAUgu"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
       "server": "51.77.225.200",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -29,7 +21,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
       "server": "23.81.34.204",
       "server_port": 443,
       "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
@@ -47,6 +39,14 @@
           "short_id": "b19b017d6f453873"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
+      "server": "149.102.149.207",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
     },
     {
       "type": "shadowsocks",
@@ -79,23 +79,9 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
-      "server": "193.163.203.170",
-      "server_port": 443,
-      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
-          "short_id": "b28db60d77c50b4f"
-        }
-      }
+      "server": "135.106.162.8",
+      "server_port": 150,
+      "uuid": "08048938-eab6-4107-afee-53c1dbadef9c"
     },
     {
       "type": "vless",
@@ -142,7 +128,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
-      "server": "server.slavkiti.monster",
+      "server": "107.181.151.39",
       "server_port": 443,
       "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
       "flow": "xtls-rprx-vision",
@@ -151,7 +137,7 @@
         "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

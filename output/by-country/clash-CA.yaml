@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  server: 51.222.107.43
+  port: 2083
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
+- name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -12,21 +19,13 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 51.222.107.43
-  port: 2083
+  server: 51.222.12.127
+  port: 445
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
   server: 51.222.141.125
   port: 445
@@ -35,12 +34,13 @@ proxies:
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
 - name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  server: 51.222.12.127
-  port: 445
+  server: 134.195.196.211
+  port: 18000
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
