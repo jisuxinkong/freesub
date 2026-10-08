@@ -26,7 +26,7 @@ proxies:
     public-key: W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI
     short-id: a11023050f134216
   servername: www.yandex.ru
-  client-fingerprint: ios
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -41,7 +41,7 @@ proxies:
     public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
     short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: astracat

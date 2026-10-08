@@ -5,46 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  server: 140.238.2.250
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: noted-cougar.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 3.39.225.215
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 52.78.203.191
+  server: delicate-buck.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: delicate-buck.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: main-fawn.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  server: kind-stork.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: main-fawn.rooster465.autos
+  sni: kind-stork.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   server: 3.35.217.113
   port: 443
   udp: true
@@ -52,14 +28,14 @@ proxies:
   password: UX82473651
   sni: amazing-peacock.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  server: engaging-toucan.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  server: noted-cougar.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: false
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,9 +45,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,8 +54,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
 rules:
 - MATCH,PROXIES
